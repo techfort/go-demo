@@ -12,7 +12,7 @@ WORKDIR /app
 # RUN go mod download
 
 # Copy the source from the current directory to the Working Directory inside the container
-COPY . /app
+COPY . . 
 
 # Build the Go app
 RUN go build -o main .
